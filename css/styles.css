@@ -16,19 +16,35 @@ body {
   min-width: 625px;
 }
 
+.all-borders {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.left,
+.right,
+.nav li,
+.sidebar,
+.main,
+.main li {
+  display: inline-block;
+}
+
 /*NAVIGATION*/
 .nav {
   background: #FFB4B0;
   display: block;
   margin: 20px 0;
-  border: 2px solid black;
 }
 
 .nav li {
-  list-style: none;
-  display: inline-block;
+/*  display: inline-block;*/
   margin: 10px;
-  padding: 5px;
+  padding: 2px;
 }
 
 ul {
@@ -38,8 +54,6 @@ ul {
 /*sidebar (left)*/
 .sidebar {
   background: #4DD7FA;
-  border: 2px solid black;
-  display: inline-block;
   float: left;
   height: 100%;
   width: 22%;
@@ -50,8 +64,6 @@ ul {
   background: #c4c4c4;
   text-align: center;
   margin: 5px 0;
-  border: 1px solid #666;
-  border-radius: 5px;
   padding: 5px 0;
 }
 
@@ -59,11 +71,13 @@ ul {
   padding: 5px;
 }
 
+.sidebar ul {
+  font-size: 75%;
+}
+
 /*Main Content (right)*/
 .main {
   background: #FEFAC0;
-  border: 2px solid black;
-  display: inline-block;
   float: right;
   height: 100%;
   width: 75%;
@@ -71,8 +85,6 @@ ul {
 }
 
 .main li {
-  list-style: none;
-  display: inline-block;
   margin-right: 10px;
   padding: 10px 0 10px 0;
 }
@@ -83,7 +95,19 @@ ul {
 
 .main h2 {
   color: #785616;
+}
 
+.left {
+  margin-right: 10px;
+
+}
+
+ul .left {
+  float: left;
+}
+
+ul .right {
+  float: right;
 }
 
 /*LINKS*/
@@ -95,8 +119,3 @@ a {
 a:hover {
   color: white;
 }
-
-
-
-
-
