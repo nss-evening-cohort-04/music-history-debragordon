@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container2 {
+  min-width: 625px;
+}
+
+.all-borders {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.left,
+.right,
+.nav li,
+.sidebar,
+.main,
+.main li {
+  display: inline-block;
+}
+
+/*NAVIGATION*/
+.nav {
+  background: #FFB4B0;
+  display: block;
+  margin: 20px 0;
+}
+
+.nav li {
+/*  display: inline-block;*/
+  margin: 10px;
+  padding: 2px;
+}
+
+ul {
+  padding: 0px;
+}
+
+/*sidebar (left)*/
+.sidebar {
+  background: #4DD7FA;
+  float: left;
+  height: 100%;
+  width: 22%;
+  padding: 20px;
+}
+
+.button {
+  background: #c4c4c4;
+  text-align: center;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.sidebar > div {
+  padding: 5px;
+}
+
+.sidebar ul {
+  font-size: 75%;
+}
+
+/*Main Content (right)*/
+.main {
+  background: #FEFAC0;
+  float: right;
+  height: 100%;
+  width: 75%;
+  padding: 20px 20px 0 20px;
+}
+
+.main li {
+  margin-right: 10px;
+  padding: 10px 0 10px 0;
+}
+
+.main ul {
+  margin-bottom: 10px;
+}
+
+.main h2 {
+  color: #785616;
+}
+
+.left {
+  margin-right: 10px;
+
+}
+
+ul .left {
+  float: left;
+}
+
+ul .right {
+  float: right;
+}
+
+/*LINKS*/
+a {
+  text-decoration: none;
+  color: #785616;
+}
+
+a:hover {
+  color: white;
+}
