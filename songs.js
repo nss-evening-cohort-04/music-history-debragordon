@@ -7,6 +7,17 @@ songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album App
 songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
 
 // Each student must add one song to the beginning and the end of the array.
-// Loop over the array and remove any words or characters that obviously don't belong.
+songs.unshift("My Way - by Frank Sinatra on the album Greatest Hits");
+songs.push("New York, New York - by Frank Sinatra on the album Greatest Hits");
+
 // Students must find and replace the > character in each item with a - character.
-// Must add each string to the DOM in index.html in the main content area.
+for (var i = 0; i < songs.length; i++) {
+  songs[i] = songs[i].replace('>','-');
+  songs[i] = songs[i].replace(/\*/g,'');
+  songs[i] = songs[i].replace(/@/g,'');
+  songs[i] = songs[i].replace(/\(/g,'');
+  songs[i] = songs[i].replace(/!/g,'');
+  songs[i] =
+  document.getElementById("songList").innerHTML += "<li>" + songs[i]; + "</li>"
+}
+
