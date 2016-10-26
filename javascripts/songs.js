@@ -1,6 +1,6 @@
 var songs = [];
 
-songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
+songs[songs.length] = "Legs > by Z*ZTop on the al*bum Eliminator";
 songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
 songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
 songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
@@ -17,7 +17,4 @@ for (var i = 0; i < songs.length; i++) {
   songs[i] = songs[i].replace(/@/g,'');
   songs[i] = songs[i].replace(/\(/g,'');
   songs[i] = songs[i].replace(/!/g,'');
-  songs[i] =
-  document.getElementById("songList").innerHTML += "<li>" + songs[i]; + "</li>"
 }
-
