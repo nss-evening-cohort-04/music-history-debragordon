@@ -1,6 +1,9 @@
+/*******CLEAN THIS UP!!!*******/
+
 * {
   margin: 0px;
   box-sizing: border-box;
+  padding: 0px;
 }
 
 body {
@@ -8,7 +11,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -66,7 +69,7 @@ ul {
   padding: 5px 0;
 }
 
-.sidebar > div {
+.sidebar div {
   padding: 5px;
 }
 
@@ -118,4 +121,44 @@ a {
 
 a:hover {
   color: white;
+}
+
+.homeLogo {
+  background-image: url("/images/music-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.centerThis {
+  text-align: center;
+}
+
+.hidden{
+  display:none;
+}
+
+.footer {
+  background: #FFB4B0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  position: fixed;
+}
+
+/*#add-song-list h3 {
+  display: inline-block;
+  margin: 10px;
+  text-align: right
+}*/
+
+#add-song-list input {
+  padding: 10px;
+}
+
+#add-song-list button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  margin-top: 10px;
 }

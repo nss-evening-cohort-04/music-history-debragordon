@@ -4,60 +4,91 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-<div class="container">
-  <header class="nav all-borders">
-    <ul class="list-style">
-      <li><a href="#">View Music</a></li>
-      <li>|</li>
-      <li><a href="#">Add Music</a></li>
-      <li>|</li>
-      <li><a href="#">Profile</a></li>
-    </ul>
+  <div class="container">
+    <header class="nav all-borders">
+      <ul class="list-style">
+        <li id="go-home"><a href="#">Home</a></li>
+        <li>|</li>
+        <li id="add-music"><a href="#">Add Music</a></li>
+        <li>|</li>
+        <li id="show-list"><a href="#">List Music</a></li>
+      </ul>
+    </header>
 
-  </header>
-  <div class="container2">
-    <div class="sidebar all-borders">
-      <div>Song Length:</div>
-        <input type="range" name="points" min="0" max="10">
-      <div>Artist:</div>
-        <select>
-          <option value="Chris-Stapleton">Chris Stapleton</option>
-          <option value="Dierks-Bentley">Dierks Bentley</option>
-          <option value="Brothers-Osborne">Brothers Osborne</option>
-          <option value="Maren-Morris">Maren Morris</option>
-        </select>
-      <div>Album:</div>
-        <select>
-          <option value="Traveller">Traveller</option>
-          <option value="Riser">Riser</option>
-          <option value="Pawn-Shop">Pawn Shop</option>
-          <option value="Hero">Hero</option>
-        </select>
-      <div>Genre:</div>
-        <ul class="left list-style">
-          <li><input type="checkbox" name="genre" value="Rock"> Rock</li>
-          <li><input type="checkbox" name="genre" value="Pop"> Pop</li>
-          <li><input type="checkbox" name="genre" value="Blues"> Blues</li>
-        </ul>
-        <ul class="right list-style">
-          <li><input type="checkbox" name="genre" value="Classical"> Classical</li>
-          <li><input type="checkbox" name="genre" value="JAZZ"> Jazz</li>
-          <li><input type="checkbox" name="genre" value="Hip-Hop"> Hip Hop</li>
-        </ul>
-      <div>
-      <h4 class="button all-borders"><a href="#">Filter</a></h4>
+    <div id="home-view" class="homeLogo centerThis">Make your playlist today!</div>
+
+    <div id="add-music-view" class="hidden">
+      <div class="centerThis" id="add-song-list">
+        <div class="row">
+          <h3 class="col-md-6">Song: </h3>
+          <input type="text" name="" value="" placeholder="Enter Song Name" id="song-name" class="col-md-6">
+        </div>
+        <div class="row">
+          <h3 class="col-md-6">Artist: </h3>
+          <input type="text" name="" value="" placeholder="Enter Artist Name" id="artist-name" class="col-md-6">
+        </div>
+        <div class="row">
+          <h3 class="col-md-6">Album: </h3>
+          <input type="text" name="" value="" placeholder="Enter Album Name" id="album-name" class="col-md-6">
+        </div>
+        <div class="row">
+          <button type="" class="btn" id="add-my-music">ADD</button>
+        </div>
       </div>
     </div>
 
-    <div class="main all-borders">
-      <ul id="songList"></ul>
+    <div class="container2 hidden" id="list-music-view">
+      <div class="sidebar all-borders">
+        <div>Song Length:</div>
+          <input type="range" name="points" min="0" max="10">
+        <div>Artist:</div>
+          <select>
+            <option value="Chris-Stapleton">Chris Stapleton</option>
+            <option value="Dierks-Bentley">Dierks Bentley</option>
+            <option value="Brothers-Osborne">Brothers Osborne</option>
+            <option value="Maren-Morris">Maren Morris</option>
+          </select>
+        <div>Album:</div>
+          <select>
+            <option value="Traveller">Traveller</option>
+            <option value="Riser">Riser</option>
+            <option value="Pawn-Shop">Pawn Shop</option>
+            <option value="Hero">Hero</option>
+          </select>
+        <div>Genre:</div>
+          <ul class="left list-style">
+            <li><input type="checkbox" name="genre" value="Rock"> Rock</li>
+            <li><input type="checkbox" name="genre" value="Pop"> Pop</li>
+            <li><input type="checkbox" name="genre" value="Blues"> Blues</li>
+          </ul>
+          <ul class="right list-style">
+            <li><input type="checkbox" name="genre" value="Classical"> Classical</li>
+            <li><input type="checkbox" name="genre" value="JAZZ"> Jazz</li>
+            <li><input type="checkbox" name="genre" value="Hip-Hop"> Hip Hop</li>
+          </ul>
+        <div>
+        <h4 class="button all-borders"><a href="#">Filter</a></h4>
+        </div>
+      </div>
+
+      <div class="main all-borders">
+        <ul id="song-list"></ul>
+      </div>
     </div>
+    <footer class="footer all-borders">
+      (c)2016 Debra Gordon Tech Solutions | <a href="debragordon.tech" target="_blank">See More From Debra</a>
+    </footer>
   </div>
-</div>
-<script src="/songs.js" type="text/javascript" charset="utf-8" async defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="javascripts/songs.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="javascripts/add.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="javascripts/app.js" type="text/javascript" charset="utf-8" async defer></script>
+
 </body>
 </html>
