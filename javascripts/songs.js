@@ -1,20 +1,31 @@
-var songs = [];
+"use strict";
 
-songs[songs.length] = "Legs > by Z*ZTop on the al*bum Eliminator";
-songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
-songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
-songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
-songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
+let songs, moreSongs;
 
-// Each student must add one song to the beginning and the end of the array.
-songs.unshift("My Way - by Frank Sinatra on the album Greatest Hits");
-songs.push("New York, New York - by Frank Sinatra on the album Greatest Hits");
+let songRequest = () => {
+ return new Promise((resolve, reject)=>{
+  $.ajax({
+    method: 'GET',
+    url: 'data/songs.json'
+  }).then( (response) => {
+    console.log('songs response: ',response);
+     resolve(response);
+  }, (errorResponse) => {
+    reject(errorResponse);
+    });
+  });
+};
 
-// Students must find and replace the > character in each item with a - character.
-for (var i = 0; i < songs.length; i++) {
-  songs[i] = songs[i].replace('>','-');
-  songs[i] = songs[i].replace(/\*/g,'');
-  songs[i] = songs[i].replace(/@/g,'');
-  songs[i] = songs[i].replace(/\(/g,'');
-  songs[i] = songs[i].replace(/!/g,'');
-}
+let moreSongsRequest = () => {
+ return new Promise((resolve, reject)=>{
+  $.ajax({
+    method: 'GET',
+    url: 'data/songs2.json'
+  }).then( (response) => {
+    console.log('moreSongs response: ',response);
+     resolve(response);
+  }, (errorResponse) => {
+    reject(errorResponse);
+    });
+  });
+};

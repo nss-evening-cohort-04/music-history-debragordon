@@ -1,0 +1,23 @@
+{
+    "songArchive": [{
+        "title": "Welcom To The Jungle",
+        "artist": "Guns 'N Roses",
+        "album": "Appetite for Destruction"
+    }, {
+        "title": "Ironic",
+        "artist": "Alanis Morisette",
+        "album": "Jagged Little Pill"
+    },{
+        "title": "My Way",
+        "artist": "Frank Sinatra",
+        "album": "Greatest Hits"
+    }, {
+        "title": "Black or White",
+        "artist": "Michael Jackson",
+        "album": "Top Hits"
+    }, {
+        "title": "On The Road Again",
+        "artist": "Willie Nelson",
+        "album": "On The Road Again"
+    }]
+}

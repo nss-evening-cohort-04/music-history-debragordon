@@ -1,4 +1,4 @@
-/*******CLEAN THIS UP!!!*******/
+/***** General style *****/
 
 * {
   margin: 0px;
@@ -8,157 +8,80 @@
 
 body {
   font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    color: #785616;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.container2 {
-  min-width: 625px;
-}
-
-.all-borders {
+.bordersMain {
   border: 2px solid black;
   border-radius: 5px;
 }
 
-.list-style {
-  list-style: none;
+li {
+  list-style-type: none;
+  display: inline;
 }
 
-.left,
-.right,
-.nav li,
-.sidebar,
-.main,
-.main li {
-  display: inline-block;
+h6 {
+  display: inline;
+  font-size: .75em;
 }
 
-/*NAVIGATION*/
-.nav {
-  background: #FFB4B0;
+/***** Dynamic style *****/
+
+.visible {
   display: block;
-  margin: 20px 0;
 }
 
-.nav li {
-  margin: 10px;
-  padding: 2px;
+.hidden {
+  display: none;
 }
 
-ul {
-  padding: 0px;
-}
+/***** NAV *****/
 
-/*sidebar (left)*/
-.sidebar {
-  background: #4DD7FA;
-  float: left;
-  height: 100%;
-  width: 22%;
-  padding: 20px;
-}
-
-.button {
-  background: #c4c4c4;
-  text-align: center;
-  margin: 5px 0;
-  padding: 5px 0;
-}
-
-.sidebar div {
-  padding: 5px;
-}
-
-.sidebar ul {
-  font-size: 75%;
-}
-
-/*Main Content (right)*/
-.main {
-  background: #FEFAC0;
-  float: right;
-  height: 100%;
-  width: 75%;
-  padding: 20px 20px 0 20px;
-}
-
-.main li {
-  margin-right: 10px;
-  padding: 10px 0 10px 0;
-}
-
-.main ul {
+.navMain {
+  background-color: #FFB4B0;
+  padding: 10px 10px 10px 20px;
   margin-bottom: 10px;
-  width: 40em;
 }
 
-.main h2 {
-  color: #785616;
+.navMain ul li {
+  padding-right: 10px;
+  font-size: 1.25em;
+}
+
+/***** Left Choices *****/
+
+.leftChoices {
+  background-color: #4DD7FA;
+  height: auto;
 }
 
 .left {
-  margin-right: 10px;
-
-}
-
-ul .left {
   float: left;
 }
 
-ul .right {
+.right {
   float: right;
 }
 
-/*LINKS*/
-a {
-  text-decoration: none;
-  color: #785616;
+/***** Right Song List *****/
+
+.rightMainContent {
+  background-color: #FEFAC0;
+  height: auto;
 }
 
-a:hover {
-  color: white;
-}
-
-.homeLogo {
-  background-image: url("/images/music-logo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-}
-
-.centerThis {
-  text-align: center;
-}
-
-.hidden{
-  display:none;
-}
+/***** Right Song List *****/
 
 .footer {
-  background: #FFB4B0;
-  padding: 10px;
-  width: 100%;
   text-align: center;
-  bottom: 0px;
-  position: fixed;
 }
 
-/*#add-song-list h3 {
-  display: inline-block;
-  margin: 10px;
-  text-align: right
-}*/
+/***** song adder div *****/
 
-#add-song-list input {
-  padding: 10px;
+.addSongView {
+  text-align: center;
+  background-color: #FEFAC0;
+  width: 100%;
 }
 
-#add-song-list button {
-  padding: 10px 20px;
-  border: 1px solid black;
-  margin-top: 10px;
-}
