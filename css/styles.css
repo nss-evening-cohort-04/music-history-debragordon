@@ -1,87 +1,64 @@
 /***** General style *****/
-
 * {
   margin: 0px;
   box-sizing: border-box;
-  padding: 0px;
-}
+  padding: 0px; }
 
 body {
   font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
-    color: #785616;
-}
+  color: #785616; }
 
 .bordersMain {
   border: 2px solid black;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 li {
   list-style-type: none;
-  display: inline;
-}
+  display: inline; }
 
 h6 {
   display: inline;
-  font-size: .75em;
-}
+  font-size: .75em; }
 
 /***** Dynamic style *****/
-
 .visible {
-  display: block;
-}
+  display: block; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 /***** NAV *****/
-
 .navMain {
   background-color: #FFB4B0;
   padding: 10px 10px 10px 20px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .navMain ul li {
   padding-right: 10px;
-  font-size: 1.25em;
-}
+  font-size: 1.25em; }
 
 /***** Left Choices *****/
-
 .leftChoices {
   background-color: #4DD7FA;
-  height: auto;
-}
+  height: auto; }
 
 .left {
-  float: left;
-}
+  float: left; }
 
 .right {
-  float: right;
-}
+  float: right; }
 
 /***** Right Song List *****/
-
 .rightMainContent {
   background-color: #FEFAC0;
-  height: auto;
-}
+  height: auto; }
 
 /***** Right Song List *****/
-
 .footer {
-  text-align: center;
-}
+  text-align: center; }
 
 /***** song adder div *****/
-
 .addSongView {
   text-align: center;
   background-color: #FEFAC0;
-  width: 100%;
-}
-
+  width: 100%; }

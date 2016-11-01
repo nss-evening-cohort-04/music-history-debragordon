@@ -8,15 +8,16 @@ $(document).ready(()=> {
   let $sidebar = $("#sidebar");
   let $songListShow = $("#list-songs");
   let $songAdder = $("#song-adder");
+  let songs, moreSongs;
 
 //gets songs from .json
-  songRequest().then((dataFromSongs)=>{
-    console.log('dataFromSongs: ',dataFromSongs);
+  SongMaker.songRequest().then((dataFromSongs)=>{
+    console.log('dataFromSongs: ', dataFromSongs);
     songs = dataFromSongs;
     displayMusicList(songs);
 
     $('#show-more-songs').on("click", function() {
-      moreSongsRequest().then((dataFromMoreSongs)=>{
+      SongMaker.moreSongsRequest().then((dataFromMoreSongs)=>{
         console.log('dataFromMoreSongs: ',dataFromMoreSongs);
         $songListShow.html("");
         songLister = "";
@@ -57,7 +58,7 @@ $(document).ready(()=> {
     songLister += "</ul><br/><br/>";
     songLister += "<button type='button' id='show-more-songs' class='btn btn-default btn-xs'>More ></button><br/><br/>";
     $songListShow.html(songLister);
-  };
+  }
 
 //nav click events
   $listSongsLink.on('click', listMusic);
