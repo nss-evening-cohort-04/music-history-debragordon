@@ -1,0 +1,94 @@
+$none: none;
+$space10: 10px;
+$navPink: #FFB4B0;
+$subMenu: #4DD7FA;
+$mainYellow: #FEFAC0;
+$centerThis: center;
+
+/***** General style *****/
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    color: #785616;
+}
+
+.bordersMain {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+li {
+  list-style-type: $none;
+  display: inline;
+}
+
+h6 {
+  display: inline;
+  font-size: .75em;
+}
+
+/***** Dynamic style *****/
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: $none;
+}
+
+/***** NAV *****/
+
+.navMain {
+  background-color: $navPink;
+  padding: $space10 $space10 $space10 20px;
+  margin-bottom: $space10;
+}
+
+.navMain ul li {
+  padding-right: $space10;
+  font-size: 1.25em;
+}
+
+/***** Left Choices *****/
+
+.leftChoices {
+  background-color: $subMenu;
+  height: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/***** Right Song List *****/
+
+.rightMainContent {
+  background-color: $mainYellow;
+  height: auto;
+}
+
+/***** Right Song List *****/
+
+.footer {
+  text-align: $centerThis;
+}
+
+/***** song adder div *****/
+
+.addSongView {
+  text-align: $centerThis;
+  background-color: $mainYellow;
+  width: 100%;
+}
+
